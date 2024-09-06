@@ -11,7 +11,7 @@ header, nav,main,footer{
 
 a{
     /* color: #13480f; */
-    color: #191970;
+    color: #87cdf6;/*#87cdf6;*/
     text-decoration: none;
 }
 
@@ -81,7 +81,7 @@ border-top: 3px solid transparent;
 
 }
 nav ul li a{
-    color: #191970;
+    color: #87cdf6;
 }
 nav li:hover{
     border-top: 3px solid #fff;
@@ -149,7 +149,7 @@ footer{
 }
 footer a{
     text-decoration: none;
-    color: #191970;
+    color: #87cdf6;
 
 }
 footer a:hover{
@@ -200,7 +200,7 @@ section ul{
 }
 section a{
     text-decoration: none;
-    color: #191970;
+    color: #87cdf6;
 }
 nav h2{
     display: none;
@@ -352,9 +352,9 @@ header h1{
     margin-bottom: 0px;
 }
 footer{
-    color:#191970;
+    color:#87cdf6;
 }
-
+/**/
 /*///////////////////////////////////////////////////////////////////// desktop*/
 @media screen and (min-width:1024px){
 
