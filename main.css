@@ -5,6 +5,7 @@ header, nav,main,footer{
 #contactme{
     text-align: center;
 }
+
 .softwaretools{
     font-size: 0.8rem;
 }
@@ -14,6 +15,7 @@ a{
     color: #87cdf6;/*#87cdf6;*/
     text-decoration: none;
 }
+
 
 body{
     margin: 0;
@@ -78,13 +80,15 @@ nav li a:hover{
 }
 nav li{
 border-top: 3px solid transparent;
-
+border-bottom: 3px solid transparent;
 }
+
 nav ul li a{
     color: #87cdf6;
 }
 nav li:hover{
     border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
     box-sizing: border-box;
 
 }
@@ -209,28 +213,59 @@ nav h2{
         h1{
             padding-bottom: 20px;
         }
+nav li:nth-child(1){
+            border-top: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            box-sizing: border-box;
+}
+        nav li:nth-child(1):hover{
+            border-top: 3px solid #fff;
+            border-bottom: 3px solid #fff;
+
+        } 
 /*///////////////////////////////////////////////////////////////////// tablet */
 
 @media screen and (min-width: 480px){
     /* body{
         margin: 0px 20px 0px 20px;
     } */
+    nav li{
+        border-bottom: 20px;
+    }
     #wrap{
         margin: 0px 20px 0px 0px;
     }
-
+nav{
+    height:68px;
+}
 
     h1{
-        padding-bottom: 0px;
+        padding-bottom: 10px;
     }
-    nav li:nth-child(1){
+nav li a{
+    padding-bottom:10px;
+}
+     nav li:nth-child(1){
         border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        box-sizing: border-box;
     }
     nav li:nth-child(1):hover{
         border-top: 3px solid #fff;
+        border-bottom: 3px solid #fff;
+
+    } 
+    nav> li{
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent;
         box-sizing: border-box;
-    
+        padding-bottom:10px;
     }
+    nav li:hover{
+        border-top: 3px solid #fff;
+        border-bottom: 3px solid #fff;
+    }
+
 
     section {
         margin-top: 0px;
@@ -259,6 +294,7 @@ nav h2{
         flex-direction: row;
         gap: 30px;
         padding-left: 20px;
+        margin-bottom: 20px;
         /* padding-top: 20px; */
     }
     ul{
@@ -354,6 +390,9 @@ header h1{
 footer{
     color:#87cdf6;
 }
+section p{
+    margin-top: 0px;
+}
 /**/
 /*///////////////////////////////////////////////////////////////////// desktop*/
 @media screen and (min-width:1024px){
@@ -383,12 +422,12 @@ footer{
         margin-right: 20px;
     }
    
-        #wrap{
-        display: grid;
-            grid-template-columns: 20% 80%;
-            grid-template-rows:80% 20%;
-            gap:20px;
-            padding: 20px;
+#wrap{
+    display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows:80% 20%;
+        gap:20px;
+        padding: 20px;
 
     }
     #slicertools{
