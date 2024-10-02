@@ -322,8 +322,8 @@ nav li a{
     }
     
     .softwareprojimg{
-         width: 250px;
-        height: 190px; 
+        width: 50%;
+        height: 50%; 
         float: right;
         margin: 0px 20px 20px 20px;
     }
