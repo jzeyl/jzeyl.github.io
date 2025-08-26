@@ -42,6 +42,25 @@ header {
     
 }
 
+#carouselExample {
+  max-width: 800px; /* or 100% for full width */
+  height: 400px;
+  margin: auto; /* center it horizontally */
+}
+
+#carouselExample .carousel-item img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent dark */
+  border-radius: 50%;
+  padding: 10px;
+}
+
+
 .currentpageid{
     color: #fff;
 }
