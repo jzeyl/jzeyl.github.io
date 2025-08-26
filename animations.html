@@ -10,6 +10,9 @@
 		<link href="https://fonts.googleapis.com/css?			family=Roboto|Source+Sans+Pro" rel="stylesheet">
 		
 		<title>Animations - Jeffrey Zeyl</title>
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+	
         
 	</head>
 	<!-- Google tag (gtag.js) -->
@@ -38,10 +41,34 @@
 		</nav>
 		
 		<main >
-			<p id="datavizanim">
-				<a href="images/poppyramid.gif"><img src="images/poppyramid.gif" alt="GIF showing a population pyramid chart updating over time"></a>
-				<a href="images/internet.gif"><img src="images/internet.gif" alt="GIF map showing access to internet changing on a world map across time"></a>
-			</p>
+			<!-- <p id="datavizanim">
+			
+			</p> -->
+
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+			<img src="images/poppyramid.gif" class="d-block w-100" alt="GIF showing a population pyramid chart updating over time">
+    </div>
+    <div class="carousel-item">
+  				<img src="images/internet.gif" class="d-block w-100" alt="GIF map showing access to internet changing on a world map across time">
+    </div>
+
+
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+			
 		<br>
 		</main>
 		
