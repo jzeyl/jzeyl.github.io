@@ -1,9 +1,20 @@
+main img {
+    display: block;
+    margin: 0 auto;
+}
 /*gallery*/
 
 header, nav,main,footer{
-    display: block;
+    display: block !important;
+}
+nav h1 {
+  margin: 0 auto;
 }
 
+h1{
+padding-top:20px;
+padding-bottom: 20px;
+}
 #contactme{
     text-align: center;
 }
@@ -34,23 +45,21 @@ header h2{
 }
 
 header {
+	padding: 20px 0 20px 0;
     /* background: linear-gradient(  #13480f,#000); rgb(2, 141, 106) */
-    background: #000;
-    padding: 20px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    
+    background: #000;    
 }
 
 #carouselExample {
   max-width: 800px; /* or 100% for full width */
-  height: 400px;
+  height: 800px;
   margin: auto; /* center it horizontally */
 }
 
 #carouselExample .carousel-item img {
-  object-fit: cover;
-  height: 100%;
+  object-fit: contain;
+  max-height:800px;
+  max-width:800px;
 }
 
 .carousel-control-prev-icon,
@@ -60,22 +69,42 @@ header {
   padding: 10px;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.6) !important; /* circle color */
+  border-radius: 50% !important;
+  width: 3rem !important;
+  height: 3rem !important;
+  background-size: 0.5rem 0.5rem; /* keep arrow smaller inside */
+}
+
+.carousel-item img{
+    display: flex;
+    align-items: center;   /* vertical centering */
+    justify-content: center; /* horizontal centering */
+    /*height: 800px; match your carousel height */
+}
+
+
+
 
 .currentpageid{
     color: #fff;
+
 }
 
-header h1{
-    font-size: 2em; 
+
+header h1 {
+  display: block;
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  white-space: normal; /* allow wrapping */
     font-family: 'Roboto', sans-serif;
     color: #999;
-    text-shadow: 2px 2px 3px #13480f;
-    text-align: left;
-    /* padding-bottom: 0px; */
-
+   text-align: center;
 }
 main h1{
-    font-size: 1.2 rem; 
     font-style: normal;
     font-family: 'Roboto', sans-serif, arial, sans-serif;
     color: #FFF;
@@ -84,79 +113,21 @@ main h2{
     font: 'source sans pro', arial, sans-serif;
 }
 
-nav{
-    display: flex;
-    flex-direction:column;
-    justify-content: space-between;
-    padding: 00px 0px 00px 0px;
-    background-color: black;/*#82CF95*/
-    text-align: center;
-    padding-left: 0px;
 
-}
-
-nav li a:hover{
-    color:#FFF;
-    
-}
-nav li{
-border-top: 3px solid transparent;
-border-bottom: 3px solid transparent;
-}
-
-nav ul li a{
-    color: #87cdf6;
-}
-
-/* nav li:hover>a{
-color:#FFF;
-} */
 p img{
-    width: 100%;
+    width: 190%;
     height: 190px;
-    /* border-radius: 10px; */
-    border-style: solid;
+   border-style: solid;
     border-width: 0px;
 }
 p{
     font-size: 1.2 rem;
     line-height: 1.8;
 }
-
-nav ul{
-    list-style: none;
-    margin: 0;
-    padding: 0px;
-}
-
-nav li{
-
-    border-bottom: 1px solid #fff;
-    padding: 10px;
-}
-  nav ul li:nth-child(1){
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-}  
-
-nav a{
-    color: #13480f;
-    font: 'roboto';
-    text-decoration: none;
-}
-nav a:hover{
-    color: #fff;
-}
-
 main{
     grid-area: content;
     font-size: 1.2em;
     text-align: justify;
-}
-
-main img{
-    float: right;
-    margin-left: 2%;
 }
 
 footer{
@@ -178,18 +149,6 @@ footer a:hover{
 }
 
 
-#datavizgrid{
-    display: block;
-}
-
-#datavizgrid img{
-    width: 100%;
-    padding: 0px 0px 10px 0px;
-    border-style: solid;
-    border-width: 0px;
-    overflow: auto;
-    float: left;
-}
 footer a{
     text-decoration: none;
 }
@@ -200,126 +159,21 @@ display: none;
 margin: 20px 20px 20px 20px;
 
 }
-
-aside img{
-    height: 100px;
- max-width: 300px;
-height: auto;
-max-height: 300px;
-border-color: rgb(2, 141, 106);
-border-width: 25px;
-
-
-}
-aside{
-    display: inline;
-    /* padding: 20px; */
-}
-
-section ul{
-    list-style: none;
-}
 section a{
     text-decoration: none;
     color: #87cdf6;
 }
-nav h2{
-    display: none;
-        }
-
-        h1{
-            padding-bottom: 20px;
-        }
-
-        /*without this there is no hover behaviour on first list element*/
- /* nav li:nth-child(1){
-            border-top: 3px solid transparent;
-            border-bottom: 3px solid transparent;
-            box-sizing: border-box;
-}
-        nav li:nth-child(2):hover{
-            border-top: 3px solid #fff;
-            border-bottom: 3px solid #fff;
-            box-sizing: border-box;
-        }  
-        nav li:nth-child(3):hover{
-            border-top: 3px solid #fff;
-            border-bottom: 3px solid #fff;
-            box-sizing: border-box;
-        }   */
 /*///////////////////////////////////////////////////////////////////// tablet */
 
+.navbar {
+  background-color: #fff; /* or whatever color you want */
+}
+
+
+
+
 @media screen and (min-width: 480px){
-    /* body{
-        margin: 0px 20px 0px 20px;
-    } */
-
-      
-
-
-    nav li:hover{
-        border-top: 3px solid #fff;
-        border-bottom: 3px solid #fff;
-        box-sizing: border-box;
-    
-    }
-    nav li{
-        border-bottom: 20px;
-    }
-    nav ul li:nth-child(1){
-        border-top: 1px solid transparent;
-        border-bottom: 1px solid transparent;
-    }  
-
-    #wrap{
-        margin: 0px 20px 0px 0px;
-    }
-nav{
-    height:68px;
-}
-
-    h1{
-        padding-bottom: 10px;
-    }
-nav li a{
-    padding-bottom:10px;
-}
-     nav li:nth-child(1){
-        border-top: 3px solid transparent;
-        border-bottom: 3px solid transparent;
-        box-sizing: border-box;
-    }
-    nav li:nth-child(1):hover{
-        border-top: 3px solid #fff;
-        border-bottom: 3px solid #fff;
-
-    } 
-    nav> li{
-        border-top: 3px solid transparent;
-        border-bottom: 3px solid transparent;
-        box-sizing: border-box;
-        padding-bottom:10px;
-    }
-    nav li:hover{
-        border-top: 3px solid #fff;
-        border-bottom: 3px solid #fff;
-    }
-
-
-    section {
-        margin-top: 0px;
-    }
-    section p{
-        margin-top: 0px;
-    }
-
-
-    #datavizgrid a{
-        padding: 0px 00px 0px 0px;
-        width: 100%;
-        height: auto;
-    }
-
+ 
         
     #headshot{
         display: block;
@@ -328,212 +182,30 @@ nav li a{
        float: left;
        /* margin-top:20px; */
    }
-
-    nav{
-        flex-direction: row;
-        gap: 30px;
-        padding-left: 20px;
-        margin-bottom: 20px;
-        /* padding-top: 20px; */
-    }
-    ul{
-        gap: 30px;
-    }
-    
+   
     .softwareprojimg{
-        width: 50%;
-        height: 50%; 
-        float: right;
+        width: 25%;
+        height: 25%; 
+        float: left;
         margin: 0px 20px 20px 20px;
     }
-    nav ul{
-        display: flex;
-        justify-content: space-evenly;
-        padding: 0px;
-    }
 
-    nav li {
-        padding: 20px 2% 0px 0px;
-        text-align: center;
-        border-bottom: none;
-        
-        
-    }
-
-
-
-    .projdescription{
-        padding: 0 20 0 20;
-    }
-
-    hr{
-        visibility:hidden;
-        width: 0px;
-    }
-
-
-    #datavizgrid{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 33% 33% 33%;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
-     padding: 10px; 
-
-    }
-
-
-
-    #datavizgrid img{
-        width: 90%;
-        height: 90%;
-        padding: 0px;
-        /* border-radius: 20px; */
-        border-style: solid;
-        border-width: 0px;
-        overflow: auto;
-        transition: 
-    }
-
-    #datavizgrid img:hover{
-         /* transform: scale(1.1);  */
-        filter: none;
-        z-index:1;
-        /* position:absolute; */
-        float: left; 
-        /* align-items: center; */
-        }
-
-    #datavizanim{
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        gap:15px;
-        padding-left: 20px;
-        padding: 10px;
-    }
-
-    #datavizanim img{
-        flex: 90%;
-        flex: 90%;
-        padding-left: 0px;
-        /* border-radius: 10px; */
-        border-style: solid;
-        border-width: 0px;
-        overflow: auto;
-    }
-
-/* Tooltip text */
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-   
-    /* Position the tooltip text - see examples below! */
-    /* position: absolute; */
-    z-index: 1;
-  }
-  
-  /* Show the tooltip text when you mouse over the tooltip container */
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-  }
-
-section{
-
-    padding: 20px;
+img {
+  display: block;
+  margin: 0 auto;
 }
-header h1{
-    margin-bottom: 0px;
-}
+ 
+
 footer{
     color:#87cdf6;
+background-color: black;
 }
 section p{
     margin-top: 0px;
 }
+}
 /**/
 /*///////////////////////////////////////////////////////////////////// desktop*/
-@media screen and (min-width:1024px){
 
-
-    #headshot{
-        /* margin-top:20px; */
-    }
-    section p{
-        margin-top: 0px;
-    }
-
-    nav h2{
-        display: inline;
-        float: right;
-        position:relative;
-        margin-right: 20px;
-        justify-content: right;
-        color: #999;
-    }
-    /* nav:nth-last-child({
-        text-align: right;
-    }) */
-
-    nav :nth-last-child(){
-        text-align: right;
-        margin-right: 20px;
-    }
-   
-#wrap{
-    display: grid;
-        grid-template-columns: 20% 80%;
-        grid-template-rows:80% 20%;
-        gap:20px;
-        padding: 20px;
-
-    }
-    #slicertools{
-        grid-column-start: 1;
-        grid-column-start: 2;
-    }
-
-
-    #wrapcontact{
-        display: flex;
-        
-        }
-        aside{
-            flex:38%;
-        }
-        section{
-            flex:62%;
-            padding: 20px;
-        }
-
-    #datavizgrid{
-        display: grid;
-        grid-template-columns: 33.3% 33.33% 33.3%;
-        grid-template-rows: 33.3% 33.33% 33.3%;
-        gap:15px;
-    
-        }
-        #wrapcontact{
-            display: flex;
-            justify-content: center;
-            }
-        aside{
-            flex: auto;  
-        } 
-        section{
-           flex:auto;
-            padding: 20px;
-        }
-
-        #headshot{
-            /* padding-top:  20px; */
-           float: left; 
-       }
-}
  
 
