@@ -1,20 +1,16 @@
-main img {
-    display: block;
-    margin: 0 auto;
-}
 /*gallery*/
+/** {
+    outline: 1px solid red;
+}*/
 
 header, nav,main,footer{
-    display: block !important;
+    display: block;
 }
-nav h1 {
-  margin: 0 auto;
+.navbar {
+    position: relative;
+    z-index: 1000;
 }
 
-h1{
-padding-top:20px;
-padding-bottom: 20px;
-}
 #contactme{
     text-align: center;
 }
@@ -45,21 +41,23 @@ header h2{
 }
 
 header {
-	padding: 20px 0 20px 0;
     /* background: linear-gradient(  #13480f,#000); rgb(2, 141, 106) */
-    background: #000;    
+    background: #000;
+    padding: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    
 }
 
 #carouselExample {
-  max-width: 800px; /* or 100% for full width */
-  height: 800px;
+  max-width: 100%; /* or 100% for full width */
+  height: 400px;
   margin: auto; /* center it horizontally */
 }
 
 #carouselExample .carousel-item img {
-  object-fit: contain;
-  max-height:800px;
-  max-width:800px;
+  object-fit: cover;
+  
 }
 
 .carousel-control-prev-icon,
@@ -69,42 +67,22 @@ header {
   padding: 10px;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.6) !important; /* circle color */
-  border-radius: 50% !important;
-  width: 3rem !important;
-  height: 3rem !important;
-  background-size: 0.5rem 0.5rem; /* keep arrow smaller inside */
-}
-
-.carousel-item img{
-    display: flex;
-    align-items: center;   /* vertical centering */
-    justify-content: center; /* horizontal centering */
-    /*height: 800px; match your carousel height */
-}
-
-
-
 
 .currentpageid{
     color: #fff;
-
 }
 
-
-header h1 {
-  display: block;
-  width: 100%;
-  font-size: 2rem;
-  text-align: center;
-  white-space: normal; /* allow wrapping */
+header h1{
+    font-size: 2em; 
     font-family: 'Roboto', sans-serif;
     color: #999;
-   text-align: center;
+    text-shadow: 2px 2px 3px #13480f;
+    text-align: left;
+    /* padding-bottom: 0px; */
+
 }
 main h1{
+    font-size: 1.2 rem; 
     font-style: normal;
     font-family: 'Roboto', sans-serif, arial, sans-serif;
     color: #FFF;
@@ -114,31 +92,49 @@ main h2{
 }
 
 
+
 p img{
-    width: 190%;
+    width: 100%;
     height: 190px;
-   border-style: solid;
+    /* border-radius: 10px; */
+    border-style: solid;
     border-width: 0px;
 }
 p{
     font-size: 1.2 rem;
     line-height: 1.8;
 }
+
+
+
 main{
     grid-area: content;
     font-size: 1.2em;
     text-align: justify;
 }
 
-footer{
-   padding: 2%;
-    font-size: 0.8em;
-    float:right;
-    margin: 0px;
-    color: #13480f;
-    text-align: right;
-
+main img{
+    max-height: 400px;
 }
+
+#carouselExample .carousel-item img {
+    float: none !important;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+footer {
+    padding: 2%;
+    font-size: 0.8em;
+    margin: 0;
+    color: #87cdf6;
+    text-align: right;
+    width: 100%;      
+    display: block;   
+}
+
 footer a{
     text-decoration: none;
     color: #87cdf6;
@@ -147,6 +143,7 @@ footer a{
 footer a:hover{
     color: #fff;
 }
+
 
 
 footer a{
@@ -159,21 +156,66 @@ display: none;
 margin: 20px 20px 20px 20px;
 
 }
+
+aside img{
+    height: 100px;
+ max-width: 300px;
+height: auto;
+max-height: 300px;
+border-color: rgb(2, 141, 106);
+border-width: 25px;
+
+
+}
+aside{
+    display: inline;
+    /* padding: 20px; */
+}
+
+section ul{
+    list-style: none;
+}
 section a{
     text-decoration: none;
     color: #87cdf6;
 }
 /*///////////////////////////////////////////////////////////////////// tablet */
 
-.navbar {
-  background-color: #fff; /* or whatever color you want */
-}
-
-
-
-
 @media screen and (min-width: 480px){
- 
+    /* body{
+        margin: 0px 20px 0px 20px;
+    } */
+
+      header{
+        width:70px;
+        display: block;
+      }
+
+
+
+    #wrap{
+        margin: 0px 20px 0px 0px;
+    }
+
+    h1{
+        padding-bottom: 10px;
+    }
+
+
+    section {
+        margin-top: 0px;
+    }
+    section p{
+        margin-top: 0px;
+    }
+
+
+    #datavizgrid a{
+        padding: 0px 00px 0px 0px;
+        width: 100%;
+        height: auto;
+    }
+
         
     #headshot{
         display: block;
@@ -182,30 +224,177 @@ section a{
        float: left;
        /* margin-top:20px; */
    }
-   
+
+    ul{
+        gap: 30px;
+    }
+    
     .softwareprojimg{
-        width: 25%;
-        height: 25%; 
-        float: left;
+        width: 50%;
+        height: 50%; 
+        float: right;
         margin: 0px 20px 20px 20px;
     }
 
-img {
-  display: block;
-  margin: 0 auto;
-}
- 
 
+
+    .projdescription{
+        padding: 0 20 0 20;
+    }
+
+    hr{
+        visibility:hidden;
+        width: 0px;
+    }
+
+
+    #datavizgrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+     padding: 10px; 
+
+    }
+
+
+
+    #datavizgrid img{
+        width: 90%;
+        height: 90%;
+        padding: 0px;
+        /* border-radius: 20px; */
+        border-style: solid;
+        border-width: 0px;
+        overflow: auto;
+        transition: 
+    }
+
+    #datavizgrid img:hover{
+         /* transform: scale(1.1);  */
+        filter: none;
+        z-index:1;
+        /* position:absolute; */
+        float: left; 
+        /* align-items: center; */
+        }
+
+    #datavizanim{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        gap:15px;
+        padding-left: 20px;
+        padding: 10px;
+    }
+
+    #datavizanim img{
+        flex: 90%;
+        flex: 90%;
+        padding-left: 0px;
+        /* border-radius: 10px; */
+        border-style: solid;
+        border-width: 0px;
+        overflow: auto;
+    }
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    /* position: absolute; */
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+section{
+
+    padding: 20px;
+}
+header h1{
+    margin-bottom: 0px;
+}
 footer{
     color:#87cdf6;
-background-color: black;
 }
 section p{
     margin-top: 0px;
 }
-}
 /**/
 /*///////////////////////////////////////////////////////////////////// desktop*/
+@media screen and (min-width:1024px){
 
+
+    #headshot{
+        /* margin-top:20px; */
+    }
+    section p{
+        margin-top: 0px;
+    }
+
+
+   
+#wrap{
+    display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows:80% 20%;
+        gap:20px;
+        padding: 20px;
+
+    }
+    #slicertools{
+        grid-column-start: 1;
+        grid-column-start: 2;
+    }
+
+
+    #wrapcontact{
+        display: flex;
+        
+        }
+        aside{
+            flex:38%;
+        }
+        section{
+            flex:62%;
+            padding: 20px;
+        }
+
+    #datavizgrid{
+        display: grid;
+        grid-template-columns: 33.3% 33.33% 33.3%;
+        grid-template-rows: 33.3% 33.33% 33.3%;
+        gap:15px;
+    
+        }
+        #wrapcontact{
+            display: flex;
+            justify-content: center;
+            }
+        aside{
+            flex: auto;  
+        } 
+        section{
+           flex:auto;
+            padding: 20px;
+        }
+
+        #headshot{
+            /* padding-top:  20px; */
+           float: left; 
+       }
+}
  
 
