@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="main.css" rel="stylesheet" media="screen">
+    <link rel="icon" type="image/x-icon" href="images\favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro" rel="stylesheet">
+    
+    <title>Data Visualizations - Jeffrey Zeyl</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    
+    <style>
+        .thumbnail-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .thumb {
+            cursor: pointer;
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+        .thumb:hover {
+            opacity: 1;
+        }
+        .thumb.active {
+            opacity: 1;
+            border: 3px solid #0d6efd !important;
+        }
+    </style>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LRXZ3JJVHZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LRXZ3JJVHZ');
+</script>
+
+<body>
+    <header>
+        <h1></h1>
+    </header>
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-black px-3">
+        <a class="navbar-brand text-light" href="index.html">Jeffrey Zeyl</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Software Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Data Visualizations</a>
+                </li>
+            </ul>
+
+            <span class="navbar-text text-secondary">
+                Scientific software development
+            </span>
+        </div>
+    </nav>
+
+    <main>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/aq_t_pca.jpeg" class="d-block w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="PCA analysis scatterplot">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/housing prices and income 2018.png" class="d-block w-100" alt="Housing prices and income visualization">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/provincialparksdash_.png" class="d-block w-100" alt="Provincial parks dashboard">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/audiogrambxplt .png" class="d-block w-100" alt="Audiogram boxplot">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/audiogramcutoffs.png" class="d-block w-100" alt="Audiogram cutoffs">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/aq_t_phylogeny.jpeg" class="d-block w-100" alt="Phylogeny visualization">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/heatwave.png" class="d-block w-100" alt="Heatwave data">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/shiny_app.png" class="d-block w-100" alt="Shiny app interface">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/tech revenues.png" class="d-block w-100" alt="Tech revenues chart">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Feb 2 panel weather.png" class="d-block w-100" alt="Weather panel">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/poppyramid.gif" class="d-block w-100" alt="Population pyramid animation">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/internet.gif" class="d-block w-100" alt="Internet access world map animation">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/global population growth.png" class="d-block w-100" alt="Global population growth">
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Thumbnail Navigation -->
+        <div class="container mt-4 mb-5 thumbnail-container">
+            <div class="row g-2 justify-content-center">
+                <div class="col-2 col-md-1">
+                    <img src="images/aq_t_pca.jpeg" class="img-fluid border rounded thumb active" data-bs-target="#carouselExample" data-bs-slide-to="0" alt="Thumbnail 1">
+                </div>
+                <div class="col-2 col-md-1">
+                    <img src="images/housing prices and income 2018.png" class="img-fluid border rounded thumb" data-bs-target="#carouselExample" data-bs-slide-to="1" alt="Thumbnail 2">
+                </div>
+                <div class="col-2 col-md-1">
+                    <img src="images/provincialparksdash_.png" class="img-fluid border rounded thumb" data-bs-target="#carouselExample" data-bs-slide-to="2" alt="Thumbnail 3">
+                </div>
+                <div class="col-2 col-md-1">
+                    <img src="images/audiogrambxplt .png" class="img-fluid border rounded thumb" data-bs-target="#carouselExample" data-bs-slide-to="3" alt="Thumbnail 4">
+                </div>
+                <div class="col-2 col-md-1">
+                    <img src="images/audiogramcutoffs.png" class="img-fluid border rounded thumb" data-bs-target="#carouselExample" data-bs-slide-to="4" alt="Thumbnail 5">
+                </div>
+                <div class="col-2 col-md-1">
+                    <img src="images/aq_t_phylogeny.jpeg" class="img-fluid border rounded thumb" data-bs-target="#carouselExample" data-bs-slide-to="5" alt="Thumbnail 6">
+                </div>
+                <div class="col-2 col-md-1">
+                    <img src="images/heatwave.png" class="img-fluid border rounded thumb" data-bs-target="#carouselExample" data-bs-slide-to="6" alt="Thumbnail 7">
+                </div>
+                <div class="col-2 col-md-1">
+                    <img src="images/shiny_app.png" class="img-fluid border rounded thumb" data-bs-target="#carouselExample" data-bs-slide-to="7" alt="Thumbnail 8">
+                </div>
+                <div class="col-2 col-md-1">
+                    <img src="images/tech revenues.png" class="img-fluid border rounded thumb" data-bs-target="#carouselExample" data-bs-slide-to="8" alt="Thumbnail 9">
+                </div>
+                <div class="col-2 col-md-1">
+                    <img src="images/Feb 2 panel weather.png" class="img-fluid border rounded thumb" data-bs-target="#carouselExample" data-bs-slide-to="9" alt="Thumbnail 10">
+                </div>
+                <div class="col-2 col-md-1">
+                    <img src="images/poppyramid.gif" class="img-fluid border rounded thumb" data-bs-target="#carouselExample" data-bs-slide-to="10" alt="Thumbnail 11">
+                </div>
+                <div class="col-2 col-md-1">
+                    <img src="images/internet.gif" class="img-fluid border rounded thumb" data-bs-target="#carouselExample" data-bs-slide-to="11" alt="Thumbnail 12">
+                </div>
+                <div class="col-2 col-md-1">
+                    <img src="images/global population growth.png" class="img-fluid border rounded thumb" data-bs-target="#carouselExample" data-bs-slide-to="12" alt="Thumbnail 13">
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for enlarged images -->
+        <div class="modal fade" id="imageModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content bg-black">
+                    <div class="modal-body p-0">
+                        <img id="modalImage" src="" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2026<br><a href="mailto:j_zeyl@fanshaweonline.ca">Contact Jeff</a></p>
+    </footer>
+
+    <script>
+        // Modal functionality for enlarged images
+        document.querySelectorAll('#carouselExample img').forEach(img => {
+            img.addEventListener('click', () => {
+                document.getElementById('modalImage').src = img.src;
+            });
+        });
+
+        // Thumbnail active state management
+        const carousel = document.getElementById('carouselExample');
+        const thumbnails = document.querySelectorAll('.thumb');
+
+        carousel.addEventListener('slide.bs.carousel', (e) => {
+            thumbnails.forEach(thumb => thumb.classList.remove('active'));
+            thumbnails[e.to].classList.add('active');
+        });
+
+        // Click thumbnail to change carousel slide
+        thumbnails.forEach((thumb, index) => {
+            thumb.addEventListener('click', () => {
+                const carouselInstance = bootstrap.Carousel.getInstance(carousel);
+                carouselInstance.to(index);
+            });
+        });
+    </script>
+</body>
+</html>

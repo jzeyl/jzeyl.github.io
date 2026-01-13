@@ -11,6 +11,20 @@ header, nav,main,footer{
     z-index: 1000;
 }
 
+.card-title {
+
+    text-align: center;
+    font-weight: bold;
+}
+       .thumb {
+            cursor: pointer;
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+            width: 100%;
+            height: 60px;
+            object-fit: cover;
+        }
+.thumb:hover { opacity: 1; }
 #contactme{
     text-align: center;
 }
