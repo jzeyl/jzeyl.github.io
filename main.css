@@ -31,6 +31,8 @@ header, nav,main,footer{
 }
 */
 
+.btn btn-primary btn-sm { background-color: #87cdf6 !important; }
+.btn-primary { background-color: #87cdf6 !important; border-color: #87cdf6 !important; }
 
 .card-title {
 
