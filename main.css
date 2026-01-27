@@ -11,6 +11,10 @@ header, nav,main,footer{
     z-index: 1000;
 }
 
+/* p {
+    padding: 20px;
+} */
+
 .card-title {
 
     text-align: center;

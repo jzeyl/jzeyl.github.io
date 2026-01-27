@@ -59,52 +59,71 @@
 
 		
 	 <main class="container my-5">
-        <!-- 3D Slicer Plugins Section -->
-        <section class="mb-5">
-            <h2 class="mb-4">3D Slicer Plugins</h2>
-            <p class="mb-4">Tools: Python, PyQt</p>
-            
-            <div class="row g-4">
-                <!-- Retainer Designer Card -->
-                <div class="col-md-6">
-                    <div class="card h-100 shadow-sm">
-					 <a href="images/arcshape_video.png" class="btn btn-outline-secondary btn-sm">View Image
 
-                     <img src="images/arcshape_video.png" class="card-img-top" alt="Retainer Designer Screenshot">
-                     </a>       
-					 
-					 <a href="images/arcshape.png" class="btn btn-outline-secondary btn-sm">View Image
+<section class="mb-5">
 
-<img src="images/arcshape.png" class="card-img-top" alt="Retainer Designer Screenshot">
-</a>
-                        <div class="card-body">
-                            <h5 class="card-title">Retainer Designer</h5>
-                            <p class="card-text">
-                                A plugin for designing an orthodontic retainer wire 
-								for to give instructions for wire-bending machine. The user sets a 
-								3D plane to intersect through through a jaw 
-								model and generate points representing 
-								the retainer wire. Points can be adjusted  
-								in a 3D view with real-time visual 
-								feedback of constraint parameters.
-                            </p>
-                        </div>
-                        <div class="card-footer bg-white">
-                            <a href="https://www.youtube.com/watch?v=XA61ppuyrTY" class="btn btn-primary btn-sm">Watch Video</a>
-                        </div>
-                    </div>
+    <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-6">
+            <div class="card h-100 shadow-sm">
+                <a href="https://londonjobsdashboard.ca" class="btn btn-outline-secondary btn-sm">
+                    Visit Site
+                    <img src="images/trends.png" class="card-img-top" alt="Skin Model Maker Screenshot">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title"><a href="https://londonjobsdashboard.ca">londonjobsdashboard.ca</a></h5>
+                    <p class="card-text">
+                        Historical database of tech job listings in London, Ontario. Job listings can be searched 
+                        and analysed for company and sector trends over time. App runs an automatic ETL pipeline using Python to collect jobs. API served over Express.js. 
+                    </p>
                 </div>
+            </div>
+        </div>
 
-                <!-- Skin Model Maker Card -->
-                <div class="col-md-6">
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-6">
+            <div class="card h-100 shadow-sm">
+<div class="d-flex gap-2 justify-content-center">                
+    <a href="images/arcshape_video.png" class="btn btn-outline-secondary btn-sm">
+                    View Image
+                    <img src="images/arcshape_video.png" class="card-img-top" alt="Retainer Designer Screenshot">
+                </a>
+
+                <a href="images/arcshape.png" class="btn btn-outline-secondary btn-sm">
+                    View Image
+                    <img src="images/arcshape.png" class="card-img-top" alt="Retainer Designer Screenshot">
+                </a>
+</div>
+                <div class="card-body">
+                <div class="card-footer bg-white">
+                        <a href="https://www.youtube.com/watch?v=XA61ppuyrTY" class="btn btn-primary btn-sm">Watch Video</a>
+                    </div>
+                    <h5 class="card-title">Retainer Designer</h5>
+                    <p class="card-text">
+                        A <a href="https://slicer.org">3D Slicer </a>plugin for designing an orthodontic retainer wire for a wire‑bending machine. The user sets a 
+                        3D plane to intersect a jaw model and generate points representing the retainer wire. Points can 
+                        be adjusted in a 3D view with real-time visual feedback. Written in Python.
+ </p>
+                </div>
+            </div>
+        </div>
+
+
+
+<!-- Skin Model Maker Card -->
+                <div class="col-md-6 col-lg-6">
                     <div class="card h-100 shadow-sm">
+            			<a href="images/skinmodel mosaic2outut.jpg" class="btn btn-outline-secondary btn-sm">View Image
+
                         <img src="images/skinmodel mosaic2outut.jpg" class="card-img-top" alt="Skin Model Maker Screenshot">
+                        </a>
+                        
                         <div class="card-body">
                             <h5 class="card-title">Skin Model Maker</h5>
                             <p class="card-text">
-                                Plugin to design a 
-								3D printable skin model from abdominal scan with entry holes and 
-								labels for surgical planning. 
+                                A <a href="https://slicer.org">3D Slicer </a>plugin for designing a 
+								3D printable skin model for surgical planning from abdominal scan. 
 								The user imports a CT scan and csv file 
 								containing a series of x-y coordinates 
 								representing target surgical endpoints. 
@@ -115,13 +134,11 @@
 								of hole size and position of embossed labels.
                             </p>
                         </div>
-                        <div class="card-footer bg-white">
-                            <a href="images/skinmodel mosaic2outut.jpg" class="btn btn-outline-secondary btn-sm">View Image</a>
-                        </div>
+
                     </div>
                 </div>
-            </div>
-        </section>
+
+			</section>
 
         <!-- Scientific Computing Section -->
         <section class="mb-5">
@@ -198,30 +215,9 @@
             </div>
         </section>
 
-		<!--
-        <section class="mb-5">
-            <h2 class="mb-4">London Jobs Dashboard</h2>
-            <p class="mb-4">Tools: Python, Node, Express.js</p>
-
-<div class="col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <img src="images/skinmodel mosaic2outut.jpg" class="card-img-top" alt="Skin Model Maker Screenshot">
-                        <div class="card-body">
-                            <h5 class="card-title">Londonjobsdashboard.ca</h5>
-                            <p class="card-text">
-                                A 3D Slicer plugin written in Python. Given an abdominal scan, the user can design a 3D printable skin model with entry holes and labels for purposes of surgical planning. The clinician imports a CT scan and csv file containing a series of x-y coordinates representing target surgical endpoints. The software returns a model representing the outer skin surface punched through with holes corresponding to the user csv file. The csv data and GUI interface allows for adjustments of hole size, as well as ability to create adjustable size and position of embossed labels.
-                            </p>
-                        </div>
-                        <div class="card-footer bg-white">
-                            <a href="images/skinmodel mosaic2outut.jpg" class="btn btn-outline-secondary btn-sm">View Image</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-			</section>
-		-->
+		
+       
+		
     </main>
 
 		
