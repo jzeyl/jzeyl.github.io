@@ -60,8 +60,21 @@
 		
 	 <main class="container my-5">
 
-<section class="mb-5">
 
+
+<ul class="nav nav-tabs mb-4" role="tablist"> 
+    <li class="nav-item"> 
+        <a class="nav-link active" data-bs-toggle="tab" href="#web">Web & Desktop</a> 
+    </li> 
+    <li class="nav-item"> 
+        <a class="nav-link" data-bs-toggle="tab" href="#data">Data Analytics</a> </li> 
+</ul>
+
+            <!--<h2 class="mb-4">Web and Desktop GUI</h2>-->
+<div class="tab-content">
+
+<div id="web" class="tab-pane fade show active">
+<section class="mb-5">
     <div class="row g-4">
 
         <!-- Card 1 -->
@@ -139,18 +152,61 @@
                 </div>
 
 			</section>
+</div>
 
+
+<div id="data" class="tab-pane fade">
         <!-- Scientific Computing Section -->
         <section class="mb-5">
             <h2 class="mb-4">Scientific Computing and Statistics</h2>
-            <p class="mb-4">Tools: R, Python, ImageJ</p>
             
             <div class="row g-4">
-                <!-- Study 1 Card -->
+
+
+                <!-- 3D Slicer Scripts Card -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title">Research Study</h5>
+                            <h5 class="card-title">3D Slicer Scripts</h5>
+                            <p class="card-text">Plugin and script development for 3D Slicer medical imaging platform using Python.</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <a href="https://github.com/jzeyl/3D-Slicer-Scripts" class="btn btn-primary btn-sm">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ImageJ Macros Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">ImageJ Analysis Scripts</h5>
+                            <p class="card-text">Plugin and script development for ImageJ using ImageJ Macro Language for image analysis.</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <a href="https://github.com/jzeyl/imageJ-macros" class="btn btn-primary btn-sm">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Ear Measures Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">R Analysis Scripts</h5>
+                            <p class="card-text">Data processing scripts written in R for auditory measurements and analysis.</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <a href="https://github.com/jzeyl/Ear-Measures" class="btn btn-primary btn-sm">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                                <!-- Study 1 Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Scientific Study</h5>
                             <p class="card-text">Statistical analysis scripts written in R for scientific study.</p>
                         </div>
                         <div class="card-footer bg-white">
@@ -174,46 +230,14 @@
                     </div>
                 </div>
 
-                <!-- Ear Measures Card -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Ear Measures</h5>
-                            <p class="card-text">Data processing scripts written in R for auditory measurements and analysis.</p>
-                        </div>
-                        <div class="card-footer bg-white">
-                            <a href="https://github.com/jzeyl/Ear-Measures" class="btn btn-primary btn-sm">View Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 3D Slicer Scripts Card -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">3D Slicer Scripts</h5>
-                            <p class="card-text">Plugin and script development for 3D Slicer medical imaging platform using Python.</p>
-                        </div>
-                        <div class="card-footer bg-white">
-                            <a href="https://github.com/jzeyl/3D-Slicer-Scripts" class="btn btn-primary btn-sm">View Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ImageJ Macros Card -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">ImageJ Macros</h5>
-                            <p class="card-text">Plugin and script development for ImageJ using ImageJ Macro Language for image analysis.</p>
-                        </div>
-                        <div class="card-footer bg-white">
-                            <a href="https://github.com/jzeyl/imageJ-macros" class="btn btn-primary btn-sm">View Code</a>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
-        </section>
+
+
+     </section>
+        </div>
+</div>
+       
 
 		
        
