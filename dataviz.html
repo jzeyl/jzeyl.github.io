@@ -199,4 +199,18 @@ document.querySelectorAll('#carouselExample img').forEach(img => {
         document.getElementById('modalImage').src = img.src;
     });
 });
+
+document.querySelectorAll('.thumb').forEach(thumb => {
+  thumb.addEventListener('click', () => {
+    const carousel = document.querySelector('#carouselExample');
+
+    // Scroll the carousel to the top of the viewport
+    carousel.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  });
+});
+
+
 </script>
