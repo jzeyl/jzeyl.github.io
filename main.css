@@ -95,6 +95,18 @@ header {
     padding-bottom: 0px;
     
 }
+.thumb 
+{
+
+height: 150px !important; /* override Bootstrap */
+
+width: 150px !important; /* override Bootstrap */
+/*border: 5px solid red !important;*/  
+/*width: 100%;*/
+  aspect-ratio: 1 / 1;   /* forces a perfect square */
+  object-fit: cover;     /* crops instead of squashing */
+  object-position: center;
+}
 
 #carouselExample {
   max-width: 100%; /* or 100% for full width */
